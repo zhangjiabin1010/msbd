@@ -1,0 +1,15 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    username: root
+    password: beiwei1010
+    url: jdbc:mysql://49.232.124.98:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.z.msbd.entity
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰命名规范
